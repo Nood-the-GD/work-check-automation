@@ -1,0 +1,30 @@
+{
+  "updates": [
+    {
+      "title": "Finalize API contract for standup workflow",
+      "progress": "Aligned the API fields with the frontend owner and documented the final shape.",
+      "blocker": "",
+      "time_spent": "2h",
+      "notes": "Waiting only for final review comments."
+    },
+    {
+      "title": "Build JSON state renderer",
+      "progress": "Created a working prototype and tested the output format.",
+      "blocker": "Need a final naming decision for one field.",
+      "time_spent": ""
+    }
+  ],
+  "next_workday_tasks": [
+    {
+      "title": "Address review feedback on standup automation"
+    },
+    {
+      "title": "Integrate renderer into automation flow"
+    }
+  ],
+  "transcript_snippets": [
+    {
+      "message": "API đã chốt xong, còn renderer thì mình làm được prototype nhưng vẫn chờ chốt tên field."
+    }
+  ]
+}

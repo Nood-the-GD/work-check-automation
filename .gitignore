@@ -1,0 +1,5 @@
+.DS_Store
+.codex-tmp/
+scripts/__pycache__/
+docs/daily-standup/*.json
+

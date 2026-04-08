@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Daily Standup Workday State",
+  "type": "object",
+  "required": [
+    "workday",
+    "timezone",
+    "status",
+    "schedule",
+    "morning_tasks",
+    "afternoon_updates",
+    "task_mappings",
+    "next_workday_tasks",
+    "transcript_snippets",
+    "final_report"
+  ],
+  "properties": {
+    "workday": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "morning_pending",
+        "morning_captured",
+        "afternoon_in_progress",
+        "report_ready",
+        "closed"
+      ]
+    },
+    "schedule": {
+      "type": "object",
+      "required": ["morning_time", "afternoon_time", "workdays"],
+      "properties": {
+        "morning_time": { "type": "string" },
+        "afternoon_time": { "type": "string" },
+        "workdays": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "morning_tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/task"
+      }
+    },
+    "afternoon_updates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/update"
+      }
+    },
+    "task_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["morning_task_id", "update_id", "match_type"],
+        "properties": {
+          "morning_task_id": { "type": ["string", "null"] },
+          "update_id": { "type": "string" },
+          "match_type": {
+            "type": "string",
+            "enum": ["matched", "unplanned"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "next_workday_tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/task"
+      }
+    },
+    "transcript_snippets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stage", "message"],
+        "properties": {
+          "stage": { "type": "string" },
+          "message": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "final_report": {
+      "type": ["string", "null"]
+    }
+  },
+  "$defs": {
+    "task": {
+      "type": "object",
+      "required": ["id", "title"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "update": {
+      "type": "object",
+      "required": ["id", "title"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "progress": { "type": "string" },
+        "blocker": { "type": "string" },
+        "time_spent": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

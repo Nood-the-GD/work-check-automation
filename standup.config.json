@@ -1,0 +1,9 @@
+{
+  "timezone": "Asia/Ho_Chi_Minh",
+  "morning_time": "08:30",
+  "afternoon_time": "15:00",
+  "workdays": ["MO", "TU", "WE", "TH", "FR"],
+  "state_dir": "docs/daily-standup",
+  "default_blocker": "None",
+  "default_time_spent": "Not specified"
+}

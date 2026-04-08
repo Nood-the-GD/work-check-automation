@@ -1,0 +1,211 @@
+HƯỚNG DẪN DÙNG CODEX TASK CHECK THEO CÁCH DỄ HIỂU NHẤT
+======================================================
+
+Tài liệu này dành cho người không rành kỹ thuật.
+Bạn chỉ cần làm theo từng bước là có thể dùng Codex Task Check
+để nhắc việc và tổng hợp báo cáo công việc hằng ngày.
+
+
+1. CODEX TASK CHECK LÀ GÌ?
+--------------------------
+
+Hiểu đơn giản, đây là một cách dùng Codex để:
+
+- Buổi sáng hỏi bạn: "Hôm nay bạn sẽ làm gì?"
+- Buổi chiều hỏi bạn: "Bạn đã làm tới đâu rồi? Có vướng gì không? Ngày mai làm gì tiếp?"
+- Sau đó tự gom lại thành một bản tóm tắt công việc.
+
+Bạn không cần nói chuyện theo mẫu cứng.
+Chỉ cần trả lời tự nhiên như đang nhắn tin.
+
+
+2. CÁC BƯỚC TỪ CÀI ĐẶT ĐẾN SỬ DỤNG
+----------------------------------
+
+[Bước 1]
+Việc cần làm:
+  Cài ứng dụng Codex.
+Cách làm:
+  Mở file "Codex.dmg", rồi cài Codex vào máy như các ứng dụng thông thường trên Mac.
+Kết quả:
+  Máy có ứng dụng Codex để mở và sử dụng.
+
+[Bước 2]
+Việc cần làm:
+  Mở đúng thư mục làm việc.
+Cách làm:
+  Mở thư mục "Codex Task Check" trong Codex.
+Kết quả:
+  Bạn nhìn thấy các file của bộ công cụ này.
+
+[Bước 3]
+Việc cần làm:
+  Kiểm tra bộ công cụ đã có sẵn.
+Cách làm:
+  Chỉ cần chắc rằng trong thư mục có các mục như "prompts", "scripts", "docs", "standup.config.json".
+Kết quả:
+  Biết rằng bộ công cụ đã sẵn sàng để dùng.
+
+[Bước 4]
+Việc cần làm:
+  Chỉnh giờ nhắc cho phù hợp.
+Cách làm:
+  Mở file "standup.config.json" và sửa giờ buổi sáng, buổi chiều nếu cần.
+Kết quả:
+  Codex sẽ hỏi bạn đúng khung giờ mong muốn.
+
+[Bước 5]
+Việc cần làm:
+  Tạo lời nhắc buổi sáng.
+Cách làm:
+  Dùng nội dung trong file "prompts/morning_prompt.md" để tạo automation trong Codex.
+Kết quả:
+  Mỗi sáng Codex sẽ chủ động hỏi hôm nay bạn làm gì.
+
+[Bước 6]
+Việc cần làm:
+  Tạo lời nhắc buổi chiều.
+Cách làm:
+  Dùng nội dung trong file "prompts/afternoon_prompt.md" để tạo automation trong Codex.
+Kết quả:
+  Mỗi chiều Codex sẽ hỏi tiến độ và việc tiếp theo.
+
+[Bước 7]
+Việc cần làm:
+  Đặt lịch chạy tự động.
+Cách làm:
+  Trong Codex, đặt 2 lịch: 1 lịch buổi sáng và 1 lịch buổi chiều.
+Kết quả:
+  Bạn không cần nhớ, Codex sẽ tự nhắc.
+
+[Bước 8]
+Việc cần làm:
+  Trả lời vào buổi sáng.
+Cách làm:
+  Khi Codex hỏi, bạn chỉ cần trả lời ngắn gọn những việc định làm trong ngày.
+Kết quả:
+  Codex ghi lại kế hoạch buổi sáng của bạn.
+
+[Bước 9]
+Việc cần làm:
+  Trả lời vào buổi chiều.
+Cách làm:
+  Khi Codex hỏi, bạn trả lời mình đã làm được gì, còn vướng gì và ngày mai làm gì tiếp.
+Kết quả:
+  Codex cập nhật tình hình công việc trong ngày.
+
+[Bước 10]
+Việc cần làm:
+  Xem bản tổng hợp.
+Cách làm:
+  Sau phần hỏi buổi chiều, hệ thống sẽ tạo bản tóm tắt công việc.
+Kết quả:
+  Bạn có một bản "Yesterday/Today" để xem hoặc gửi lại cho team.
+
+
+3. BẠN SẼ DÙNG NÓ NHƯ THẾ NÀO MỖI NGÀY?
+---------------------------------------
+
+Rất đơn giản, mỗi ngày chỉ có 2 lần:
+
+- Buổi sáng:
+  Codex hỏi: "Hôm nay bạn làm gì?"
+  Bạn trả lời: Các việc bạn dự định làm trong ngày.
+
+- Buổi chiều:
+  Codex hỏi: "Bạn đã làm tới đâu rồi? Có vướng gì không? Ngày mai làm gì tiếp?"
+  Bạn trả lời: Ngắn gọn, tự nhiên như đang chat.
+
+
+4. VÍ DỤ ĐỂ HÌNH DUNG
+---------------------
+
+Buổi sáng:
+  "Hôm nay mình sẽ hoàn thiện phần báo cáo, kiểm tra lại dữ liệu và trao đổi với team về bước tiếp theo."
+
+Buổi chiều:
+  "Mình đã làm xong phần báo cáo, đã kiểm tra dữ liệu, hiện chưa có vướng mắc. Ngày mai mình sẽ chỉnh sửa theo góp ý của team."
+
+
+5. NẾU BẠN KHÔNG RÀNH KỸ THUẬT THÌ CHỈ CẦN NHỚ 3 ĐIỀU NÀY
+---------------------------------------------------------
+
+- Bạn không cần viết đúng mẫu. Trả lời tự nhiên là được.
+- Nếu chưa có gì để báo, cứ nói ngắn gọn đúng tình hình thực tế.
+- Nếu có việc phát sinh ngoài kế hoạch ban đầu, cứ nói luôn, Codex vẫn ghi nhận được.
+
+
+6. KHI NÀO CẦN CHỈNH LẠI CÀI ĐẶT?
+--------------------------------
+
+- Nếu muốn đổi giờ Codex nhắc:
+  Sửa giờ trong file "standup.config.json" rồi cập nhật lại lịch trong Codex.
+
+- Nếu không muốn nhắc vào cuối tuần:
+  Kiểm tra lại phần ngày làm việc trong "standup.config.json".
+
+- Nếu muốn đổi cách hỏi:
+  Sửa nội dung trong 2 file prompt buổi sáng và buổi chiều.
+
+
+7. CÁCH TẠO AUTOMATION NHANH BẰNG CÁCH PASTE VÀO CHAT
+-----------------------------------------------------
+
+Vì mỗi máy sẽ có đường dẫn thư mục khác nhau,
+nhưng người dùng không cần tự sửa đường dẫn trong lúc setup.
+
+Hãy làm như sau:
+
+1. Mở thư mục "Codex Task Check" trên máy của bạn.
+2. Copy toàn bộ nội dung bên dưới.
+3. Paste vào chat với Codex.
+4. Codex sẽ tự hỗ trợ xử lý phần đường dẫn khi setup.
+
+NỘI DUNG ĐỂ COPY 1 LẦN:
+-----------------------
+
+Read <DUONG_DAN_THU_MUC_CUA_BAN>/prompts/morning_prompt.md and follow it in the workspace <DUONG_DAN_THU_MUC_CUA_BAN>. Use <DUONG_DAN_THU_MUC_CUA_BAN>/standup.config.json as the shared config and save workday state under docs/daily-standup.
+
+Read <DUONG_DAN_THU_MUC_CUA_BAN>/prompts/afternoon_prompt.md and follow it in the workspace <DUONG_DAN_THU_MUC_CUA_BAN>. Use <DUONG_DAN_THU_MUC_CUA_BAN>/standup.config.json as the shared config, update today's JSON state, and render the final report when enough detail is available.
+
+Hãy tạo cho mình 2 automation: 1 cái chạy buổi sáng và 1 cái chạy buổi chiều theo giờ trong file config. Nếu đây là lần đầu tiên chạy setup này, hãy hỏi ngay hôm nay tôi sẽ làm gì, rồi lưu câu trả lời đó thành dữ liệu buổi sáng của ngày hôm nay để những lần workflow chạy tiếp theo có sẵn thông tin để hỏi tiếp.
+
+Giải thích dễ hiểu:
+
+- Bạn copy toàn bộ khối trên một lần
+  -> Codex nhận đủ thông tin để tạo cả 2 automation.
+
+- Bạn paste vào chat
+  -> Bạn không cần nhập thêm yêu cầu riêng lẻ.
+
+- Codex tự xử lý phần đường dẫn khi setup
+  -> Bạn không cần sửa tay từng chỗ.
+
+
+8. NHỮNG FILE QUAN TRỌNG BẠN CÓ THỂ CẦN BIẾT
+--------------------------------------------
+
+- "standup.config.json"
+  Nơi chỉnh giờ nhắc và các cài đặt chung.
+
+- "prompts/morning_prompt.md"
+  Nội dung để Codex hỏi bạn vào buổi sáng.
+
+- "prompts/afternoon_prompt.md"
+  Nội dung để Codex hỏi bạn vào buổi chiều.
+
+- "docs/daily-standup/"
+  Nơi lưu lại thông tin công việc theo từng ngày.
+
+
+9. TÓM TẮT SIÊU NGẮN
+--------------------
+
+Mỗi ngày bạn chỉ cần:
+
+1. Sáng trả lời "hôm nay sẽ làm gì".
+2. Chiều trả lời "đã làm được gì, còn vướng gì, ngày mai làm gì".
+3. Codex sẽ tự gom lại thành bản tóm tắt công việc.
+
+Nếu dùng đúng cách, đây giống như một người nhắc việc thông minh,
+giúp bạn cập nhật công việc hằng ngày mà không cần nhớ nhiều bước phức tạp.

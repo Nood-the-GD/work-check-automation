@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "title": "Finalize API contract for standup workflow",
+      "notes": "Need to sync with the frontend owner"
+    },
+    {
+      "title": "Prototype JSON state renderer"
+    }
+  ],
+  "transcript_snippets": [
+    {
+      "message": "Sáng nay mình sẽ chốt API cho workflow standup rồi làm thử bộ render state."
+    }
+  ]
+}
